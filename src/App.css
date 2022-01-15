@@ -13,26 +13,125 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Video_top{
+  height:300px;
 }
 
-.App-link {
-  color: #61dafb;
+#myVideo {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -70%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.content {
+  position: relative;
+  /* background: rgb(0 0 0 / 30%); */
+  /* background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
+  color: #060606; */
+  background: -webkit-linear-gradient(179deg, #00b5f5, #2a57c3);
+  color: #f5f0f0;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  /* font-family: fantasy; */
+  margin-top:5%;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+.footer{
+  position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.fa {
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.social-container {
+	 text-align: center;
+}
+ .social-icons {
+	 padding: 0;
+	 list-style: none;
+	 margin: 1em;
+}
+ .social-icons li {
+	 display: inline-block;
+	 margin: 0.15em;
+	 position: relative;
+	 font-size: 1.2em;
+}
+ .social-icons i {
+	 color: #fff;
+	 position: absolute;
+	 top: 4px;
+	 left: 7px;
+	 transition: all 265ms ease-out;
+}
+ .social-icons a {
+	 display: inline-block;
+}
+ .social-icons a:before {
+	 transform: scale(1);
+	 -ms-transform: scale(1);
+	 -webkit-transform: scale(1);
+	 content: " ";
+	 width: 60px;
+	 height: 60px;
+	 border-radius: 100%;
+	 display: block;
+	 background: linear-gradient(45deg, #00b5f5, #002a8f);
+	 transition: all 265ms ease-out;
+}
+ .social-icons a:hover:before {
+	 transform: scale(0);
+	 transition: all 265ms ease-in;
+}
+ .social-icons a:hover i {
+	 transform: scale(2.2);
+	 -ms-transform: scale(2.2);
+	 -webkit-transform: scale(2.2);
+	 color: #00b5f5;
+	 background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 transition: all 265ms ease-in;
+}
+@media screen and (max-width: 480px) {
+  
+  .Video_top{
+  height:200px;}
+  #myVideo{
+    height: 400px;
+    min-width: 100%;
+    top:27%;
   }
-  to {
-    transform: rotate(360deg);
+  .content{
+    top:20px;
   }
+  .social-icons li {font-size: 14px;left:10px;}
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  .content{
+    top:110px;
+  } /* your css rules for ipad portrait */
 }
